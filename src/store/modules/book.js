@@ -1,4 +1,4 @@
-const book ={
+const book = {
   state: {
     fileName: '',
     menuVisible: false,
@@ -18,21 +18,20 @@ const book ={
     paginate: '',
     pagelist: null,
     offsetY: 0,
-    isBookmark: null,
-    speakingIconBottom: realPx(58)
+    isBookmark: null
   },
   mutations: {
     'SET_FILENAME': (state, fileName) => {
       state.fileName = fileName
     },
-    'SET_MENUVISIBLE': (state, menuVisible) => {
-      state.menuVisible = menuVisible
+    'SET_MENU_VISIBLE': (state, visible) => {
+      state.menuVisible = visible
     },
-    'SET_SETTINGVISIBLE': (state, settingVisible) => {
-      state.settingVisible = settingVisible
+    'SET_SETTING_VISIBLE': (state, visible) => {
+      state.settingVisible = visible
     },
-    'SET_DEFAULT_FONT_SIZE': (state, defaultFontSize) => {
-      state.defaultFontSize = defaultFontSize
+    'SET_DEFAULT_FONT_SIZE': (state, fontSize) => {
+      state.defaultFontSize = fontSize
     },
     'SET_DEFAULT_FONT_FAMILY': (state, font) => {
       state.defaultFontFamily = font
@@ -78,10 +77,8 @@ const book ={
     },
     'SET_IS_BOOKMARK': (state, isBookmark) => {
       state.isBookmark = isBookmark
-    },
-    'SET_SPEAKING_ICON_BOTTOM': (state, speakingIconBottom) => {
-      state.speakingIconBottom = speakingIconBottom
     }
   }
 }
+
 export default book
